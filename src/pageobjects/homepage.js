@@ -1,3 +1,4 @@
+//@flow
 import { driver } from '../helpers/driverfactory';
 import { until } from 'selenium-webdriver';
 import babel from 'babel-polyfill';

@@ -1,3 +1,4 @@
+//@flow
 import { driver } from '../../helpers/driverfactory';
 import { load } from '../../pageobjects/homepage'
 import babel from 'babel-polyfill';

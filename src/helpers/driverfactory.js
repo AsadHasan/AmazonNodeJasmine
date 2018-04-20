@@ -1,3 +1,4 @@
+//@flow
 import { Builder, WebDriver } from 'selenium-webdriver';
 import chrome from 'chromedriver'
 
