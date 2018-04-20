@@ -4,7 +4,8 @@
   "description": "Basic automation test of amazon using webdriverio and jasmine.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/ -d lib/",
+    "test": "npm run build && jasmine lib/spec/search/spec.js",
     "flow": "node_modules/.bin/flow check"
   },
   "author": "Asad Hasan",
@@ -16,12 +17,14 @@
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
     "chromedriver": "^2.37.0",
     "flow-bin": "^0.70.0"
   },
   "babel": {
     "presets": [
-      "env"
+      "env",
+      "flow"
     ]
   }
 }
